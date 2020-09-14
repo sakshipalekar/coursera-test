@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<title>HOTEL MENU1</title>
+	<style >
+		 /****************Base styles***************/
+*{
+	box-sizing: border-box;
+}
+h1{
+ 	margin-bottom: 20px;
+ 	font-size:30px;
+ 	font-style:arial;
+ 	text-align: center;
+ }	
+		body{
+			background-color: white;
+			margin:0;
+			height:300px;
+			text-align: center;
+			width:300px;
+
+		}
+
+.container
+{
+	width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#header{
+	height: 50px;
+	background-color:white;
+}
+.box{
+	width:100%;
+	height:350px;
+	float: left;
+}
+.box1{
+	background-color: yellow;
+
+}
+.box2{
+	background-color: red;
+}
+.box3{
+	background-color: green;
+}
+.clearfix{
+clear:both;
+}
+/********Desktop*******/
+@media(min-width: 992px){
+	.box1{
+		width: 33.33%;
+	}
+	.box2{
+		width: 33.33%;
+	}
+	.box3{
+		width: 33.33%;
+	}
+}
+/*********Tablet*********/
+@media(min-width: 768px) and (max-width: 991px){
+    .box1{
+		width: 50%;
+	}
+	.box2{
+		width: 50%;
+	}
+	.box3{
+		width: 33.33%;
+	}
+}
+/*********Mobile*********/
+@media(min-width: 0px) and (max-width: 767px){
+    .box1{
+		width: 100%;
+	}
+	.box2{
+		width: 100%;
+	}
+	.box3{
+		width: 100%;
+	}
+}
+
+	</style>
+</head>
+<body>
+	<h1>OUR MENU</h1>
+  <div class="container">
+  	<header id="header"></header>
+  	<div class="box box1"><h2>beef</h2></div>
+  	<div class="box box2"><h3>pork</h3></div>
+  	<div class="box box3"><h3>chicken</h3></div>
+  	<div class="clearfix"></div>
+
+  </div>
+</body>
+</html>
